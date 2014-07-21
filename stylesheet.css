@@ -1,0 +1,248 @@
+/*************************** Reset ************************/
+a {
+  background: transparent;
+}
+a:active, a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code, pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td, th {
+  border-color: transparent;
+}
+
+/************************* Global settings ******************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: 'Open Sans', Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  width: 85%;
+  margin: auto auto;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+a {
+  color: #29A9DF;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #E95E5E;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+img {
+  vertical-align: middle;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+h1, h2, h3 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 30px;
+}
+p {
+  margin: 0 0 10px;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul ul, ol ul, ul ol, ol ol {
+  margin-bottom: 0;
+}
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+dt, dd {
+  line-height: 1.42857143;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
+code, pre {
+  font-family: Monaco, Consolas, "Ubuntu Mono", "Courier New", monospace;
+}
+code {
+  color: #E95E5E;
+  background-color: rgba(245, 245, 245, 1);
+  font-size: 90%;
+  border-radius: 2px;
+  padding: 2px 6px 2px 4px;
+}
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border-left: 3px solid #29A9DF;
+  border-radius: 4px;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+table {
+  background-color: transparent;
+  border-color: transparent;
+}
+th {
+  text-align: left;
+  box-shadow: 0px 2px 2px rgba(192, 192, 192, 0.5);
+  border-left: 10px solid #E95E5E;
+  padding: 2px 8px;
+}
+/********************** lead reformat using complex selectors *****************/
+
+h2 + pre img {
+  visibility: hidden;
+  border-left: 1px solid #222;
+}
+h2 + pre img + b:before {
+  content: "\2514\2500\2500\3000";
+  color: #777;
+}
+h2 + pre {
+  border: none;
+}
+h2, pre, dl, p {
+  margin-left: 20px;
+}
+
+/************************** table reformat using generated classes *************************/
+.TableHeadingColor {
+  background: none repeat scroll 0% 0% rgba(242, 242, 242, 1) !important;
+  color: rgba(59, 59, 59, 1) !important;
+  padding: 5px !important;
+  font-weight: normal !important;
+}
+.TableHeadingColor th b {
+  font-weight: 400 !important;
+}
+
+.TableSubHeadingColor {
+  background: #F2F2F2 !important;
+}
+
+.TableRowColor td {
+  padding-top: 10px;
+}
+
+/****************** Pagers *************************/
+.FrameTitleFont {
+  font-size: 100%;
+  color: #000000
+}
+.FrameHeadingFont {
+  font-size: 90%;
+  color: #000000
+}
+.FrameItemFont {
+  font-size: 90%;
+  color: #000000
+}
+
+/**************** Navigation bar fonts and colors *******************/
+.NavBarCell1 {
+  background-color: #fff !important;
+  height: 30px; /* color: #000000 */
+}
+.NavBarCell1 table {
+  width: 100% !important;
+}
+.NavBarCell1 tbody {
+  box-shadow: 0px 2px 2px rgba(192, 192, 192, 0.5);
+}
+.NavBarCell1 td.NavBarCell1 {
+  background-image: linear-gradient(to bottom, #6B6B6B, #535353) !important;
+}
+.NavBarCell1 td {
+  padding: 10px;
+  color: #aaa;
+}
+.NavBarCell1 a {
+  color: #fff;
+}
+.NavBarFont1 b {
+  font-weight: normal;
+}
+
+.NavBarCell1Rev {
+  background-color: #29A9DF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+.NavBarFont1Rev {
+  color: #FFFFFF;
+}
+/****************** Pagers' cells ********************/
+.NavBarCell2 {
+  padding-top: 15px;
+}
+.NavBarCell2:nth-child(2), .NavBarCell3:nth-child(2) {
+  text-align: right;
+}
+/******************* Pagewise nav celles *************/
+.NavBarCell3 {
+  /* color: #FFF */
+}
